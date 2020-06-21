@@ -39,11 +39,10 @@
         </div>
         <div class="col col-lg-3 d-lg-block d-md-block d-none">
           
-            <a href=""  data-toggle="modal" data-target="#favoriteM" style="margin-left: 60px;">
-              <img class="" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+            <a href="" data-toggle="modal" data-target="#favoriteM" style="margin-left: 60px;">
+              <img class="" src="images/liked.svg" data-toggle="modal" data-target="#favoriteM" style="width: 25px; height: 25px;" alt="">
               <span class="badge badge-light text-center text-success mr-5">2</span>
               </a>
-              
              <a href="cart.html">
                <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
                <span class="badge badge-light text-center text-success">3</span>
@@ -149,179 +148,65 @@
 
 
       <!-- main -->
-
-      <!-- alert -->
-  <div class="alert alert-success alert-dismissible fade show text-center m-2" role="alert">
-    Your order was successfully accepted !!! Thanks for the order :D
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
-  <!-- carousel -->
-
-  <div id="carouselExampleCaptions" class="col col-lg-12 d-md-block d-none p-2 carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active featuredCategory-image-wrapper" style="background-image: url();">
-        <img src="images/chococake1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block featuredCategory-title">
-          <h1>ChocoCakes in our store</h1>
+    <div class="row mt-3"> 
+      <div class="col-12 col-lg-6">
+      <form>
+        <h2 class="ml-4 my-3 text-success text-center">Shipping address</h2>
+          <div class="form-group px-3">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" placeholder="lusine.atsemyan.y@tumo.org" id="inputEmail4">
+          </div>
+        <div class="form-group px-3">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/cupcake1.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="">Our Cupcakes</h1>
+        <div class="form-group px-3">
+          <label for="inputAddress2">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="images/berrycake.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block p-5">
-          <h1 class="">Fresh, tasty, colorful, beatiful . . . </h1>
+        <div class="form-group px-3">
+          <label for="inputCountry">Country</label>
+          <input type="text" class="form-control" placeholder="Armenia" id="inputCountry">
         </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+        <div class="form-group px-3">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" placeholder="Yerevan" id="inputCity">
+        </div>
+          
+          <div class="form-group px-3">
+            <label for="inputTelephone">Telephone</label>
+            <input type="text" class="form-control" placeholder="(+374)434343" id="inputTelephone">
+          </div>
     
-  <!-- new -->
-
-  <h1 class="text-center text-success m-4" style="font-family: 'Dancing Script', cursive; font-family: 'Pacifico', cursive; font-family: 'Satisfy', cursive;" ><span class="badge badge-success">New</span> Examples </h1>
-
-  <!-- cards -->
-  <div class="card mb-3" style="max-width: 1100px;">
-    <div class="row no-gutters">
-      <div class="col-md-6">
-        <img src="images/weddcakes.jpg" class="card-img" alt="...">
-      </div>
-      <div class="col-md-6" style="background-color:#aaf55f;">
-        <div class="card-body p-3">
-          <h2 class="card-title text-center">Corporate cakes</h2>
-        <p class="card-text text-center">(50 piece)</p>
-        <h5 style=" text-decoration: line-through; text-align: center;">55.000 ֏</h5>
-        <h3 style="text-align: center;"><strong>50.000 ֏</strong></h3>
-        <p class="card-text" style="text-align: center;"><small class="text-muted">Last updated 6 mins ago</small></p>
-        <div class="d-flex justify-content-center mt-4">
-          <a href="">
-            <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
-            </a>
-           <a href="">
-             <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
-             </a>
-        </div>
-      </div>
-      </div>
+        
+      </form>
     </div>
+    <div class="col-12 col-lg-6">
+      <h2 class="ml-4 my-3 text-success text-center">Payment method</h2>
+        <div class="form-group px-3 col-12">
+          <label for="inputZip" class="">Card number</label>
+          <input type="text" class="form-control" placeholder="XXXX XXXX XXXX XXXX" id="inputZip">
+        </div>
+        <div class="form-group px-3 col-12">
+          <label for="inputZip">Name on card</label>
+          <input type="text" class="form-control" placeholder="Lusine Atchemyan" id="inputZip">
+        </div>
+        <div class="form-group px-3 col-12">
+          <label for="inputZip">Expiry Date</label>
+          <input type="text" class="form-control" placeholder="MM/YY" id="inputZip">
+        </div>
+    </div>
+ </div>
+ <div class="row">
+  <div class="col-6 ">
+      <a href="cart.html"><button class="btn btn-lg btn-secondary">Back to My Cart</button></a> 
   </div>
-<br>
-  <div class="card mb-3" style="max-width: 1100px;">
-    <div class="row no-gutters">
-      <div class="col-md-6" style="background-color:  #f587aa ;">
-        <div class="card-body" >
-          <h2 class="card-title text-center">Cupcakes</h2>
-        <p class="card-text text-center">1 piece</p>
-        <h5 style=" text-decoration: line-through; text-align: center;">1.000 ֏</h5>
-        <h3 style="text-align: center;"><strong>600 ֏</strong></h3>
-        <p class="card-text" style="text-align: center;"><small class="text-muted">Last updated 10 mins ago</small></p>
-        <div class="d-flex justify-content-center mt-4">
-          <a href="">
-            <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
-            </a>
-           <a href="">
-             <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
-             </a>
-        </div>
-      </div>
-      </div>
-      <div class="col-md-6">
-        <img src="images/cupcake2.jpg" class="card-img" alt="...">
-      </div>
-    </div>
-</div>
-<br>
-<div class="card mb-3" style="max-width:1100px;">
-  <div class="row no-gutters">
-    <div class="col-md-6">
-      <img src="images/bespoke.jpg" class="card-img" alt="...">
-    </div>
-    <div class="col-md-6" style="background-color: #aaf55f;">
-      <div class="card-body">
-        <h2 class="card-title text-center">Bespoke cake</h2>
-        <p class="card-text text-center">(20 piece)</p>
-        <h5 style=" text-decoration: line-through; text-align: center;">18.000 ֏</h5>
-        <h3 style="text-align: center;"><strong>15.000 ֏</strong></h3>
-        <p class="card-text" style="text-align: center;"><small class="text-muted">Last updated 17 mins ago</small></p>
-        <div class="d-flex justify-content-center mt-4">
-          <a href="">
-            <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
-            </a>
-           <a href="cart.html">
-             <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
-             </a>
-        </div>
-      </div>
-    </div>
+  <div class="col-6 d-flex justify-content-end ">
+      <a href="placeorder.html"><button class="btn btn-lg btn-success">Data Verification and Confirmation</button></a> 
   </div>
 </div>
 
-  <!-- exs -->
-
-  <br>
-  <h1 class="text-center text-success m-4" style="font-family: 'Dancing Script', cursive; font-family: 'Pacifico', cursive; font-family: 'Satisfy', cursive;" > Categories </h1>
-
-
-
-  <div class="row">
-    <div class="col-12 col-lg-7 p-5">
-      <div>
-      <a href="shop.html" class="col-12 col-lg-12 mb-sm-5">
-        <img class="col-12 mr-2" style="height: 500px;" src="images/berrycake2.jpg" alt="">
-        <div class="text-center border bg-dark p-3 ml-4 " style="text-decoration: none; color: cornsilk;">Celebration cakes</div>
-      </a>
-      </div>
-      <div class="row d-flex justify-content-around ml-2  ">
-      <a href="shop.html" class="col-12 col-lg-6 mb-sm-5">
-        <img class="col-12 " src="images/chococake2.webp" alt="">
-        <div class="text-center border bg-dark p-3 mx-2" style="text-decoration: none; color: cornsilk;">Celebration cake</div>
-      </a>
-      <a href="shop.html" class="col-12 col-lg-6">
-        <img class="col-12" src="images/burger.jpg" alt="">
-        <div class="text-center border bg-dark p-3 mx-2" style="text-decoration: none; color: cornsilk;">Bespoke cake</div>
-      </a>
-      </div>
-    </div>
-    <div class="col-12 col-lg-5 pt-5">
-      <div class="row d-flex ">
-        <a href="shop.html"class="col-12 col-lg-6 p-2">
-          <img class="col-12 " style="height: 75%;" src="images/birthdaycake.jpg" alt="">
-          <div class="text-center border bg-dark p-3 mx-2 mb-sm-3" style="text-decoration: none; color: cornsilk;">Bespoke cake</div>
-        </a>
-        <a href="shop.html" class="col-12 col-lg-6 p-2">
-          <img class="col-12 " style="height: 75%;" src="images/cupcake3.jpg" alt="">
-        <div class="text-center border bg-dark p-3 mx-2" style="text-decoration: none; color: cornsilk;">Cup cake</div>
-      </a>
-      </div>
-      <br>
-      <div class="col-lg-12 p-1">
-      <a href="shop.html"><img class="col-12 " src="images/weddcake2.jpg" alt="">
-      <div class="text-center border bg-dark p-3 mx-2" style="text-decoration: none; color: cornsilk;">Corporate cake</div></a> 
-      </div>
-    </div>
-  </div>
-
-  <!-- / main -->
+      <!-- / main -->
 
 
   <!-- footer -->
@@ -788,6 +673,7 @@
 </div>
 
   
+
 
 <!-- / footer -->
 

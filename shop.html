@@ -36,8 +36,15 @@
         </select>
     </div>
     <div class="col col-lg-3 d-lg-block d-md-block d-none">
-        <a class="nav-link btn btn-success" href="#">Wishlist <span class="badge badge-light">3</span></a>
-    </div>
+      <a href=""  data-toggle="modal" data-target="#favoriteM" style="margin-left: 60px;">
+        <img class="" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+        <span class="badge badge-light text-center text-success mr-5">2</span>
+        </a>
+       <a href="cart.html">
+         <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+         <span class="badge badge-light text-center text-success">3</span>
+         </a>
+  </div>
 </div>
 
 
@@ -60,10 +67,10 @@
     My account
   </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-    <button class="dropdown-item" type="button"  data-toggle="modal" data-target="#loginM">Login</button>
+    <button class="dropdown-item" type="button" data-toggle="modal" data-target="#loginM">Login</button>
     <button class="dropdown-item" type="button" data-toggle="modal" data-target="#registerM">Register</button>
-    <button class="dropdown-item" type="button">My orders</button>
-          <button class="dropdown-item" type="button">Account settings</button>
+    <button class="dropdown-item" type="button" data-toggle="modal" data-target="#orderM">My orders</button>
+    <button class="dropdown-item" type="button" data-toggle="modal" data-target="#settingM">Account settings</button>
   </div>
       </div>
         </div>
@@ -160,7 +167,7 @@
       <br>
 
   <div class="row ">
-      <div class="col-12 col-lg-3 d-lg-block d-md-block d-none ">
+      <div class="col-12 col-lg-3 ">
         
         <div class="accordion" id="accordionExample">
           <div class="card">
@@ -306,8 +313,14 @@
                           </div>
                           <div class="col">
                             <h1 style="text-align: center; color : #42784c;">7.000 ֏</h1>
-                            <br>
-                            <button class="btn btn-success ml-5">Add To Cart</button>
+                            <div class="d-flex justify-content-center mt-4">
+                              <a href="">
+                                <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
+                                </a>
+                               <a href="">
+                                 <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                                 </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -328,8 +341,14 @@
                           </div>
                           <div class="col">
                             <h1 style="text-align: center; color : #42784c;">7.000 ֏</h1>
-                            <br>
-                            <button class="btn btn-success ml-5">Add To Cart</button>
+                            <div class="d-flex justify-content-center mt-4">
+                              <a href="">
+                                <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
+                                </a>
+                               <a href="">
+                                 <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                                 </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -350,8 +369,14 @@
                           </div>
                           <div class="col">
                             <h1 style="text-align: center; color : #42784c;">7.000 ֏</h1>
-                            <br>
-                            <button class="btn btn-success ml-5">Add To Cart</button>
+                            <div class="d-flex justify-content-center mt-4">
+                              <a href="">
+                                <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
+                                </a>
+                               <a href="">
+                                 <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                                 </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -372,8 +397,14 @@
                           </div>
                           <div class="col">
                             <h1 style="text-align: center; color : #42784c;">7.000 ֏</h1>
-                            <br>
-                            <button class="btn btn-success ml-5">Add To Cart</button>
+                            <div class="d-flex justify-content-center mt-4">
+                              <a href="">
+                                <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
+                                </a>
+                               <a href="">
+                                 <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                                 </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -394,8 +425,14 @@
                           </div>
                           <div class="col">
                             <h1 style="text-align: center; color : #42784c;">7.000 ֏</h1>
-                            <br>
-                            <button class="btn btn-success ml-5">Add To Cart</button>
+                            <div class="d-flex justify-content-center mt-4">
+                              <a href="">
+                                <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
+                                </a>
+                               <a href="">
+                                 <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                                 </a>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -484,93 +521,413 @@
  </div>
 
     
- <!-- modals -->   
+  <!-- modal login -->   
 
-    <div class="modal fade" id="loginM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal fade" id="loginM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- modal register -->
+      
+      <div class="modal fade" id="registerM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-success" id="exampleModalLabel">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+    
+      <div class="form-group">
+        <label for="inputName">Name, Surname</label>
+        <input type="text" class="form-control" placeholder="Name Surname">
+      </div>
+      
+      <div class="form-group">
+        <label for="inputAddress">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+  
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+    </div>
+  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- modal orders -->
+  <div class="modal fade" id="orderM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-success" id="exampleModalLabel">My orders</h2>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body container">
+          <table>
+            <div class=" row bg-light border mx-3 p-2">
+              <div class="col col-lg-1 font-weight-bold">#</div>
+              <div class="col col-lg-4 font-weight-bold">Order</div>
+              <div class="col col-lg-4 font-weight-bold">Date</div>
+              <div class="col col-lg-3 font-weight-bold">Total</div>
+            </div>
+            <div class="row bg-light border mx-3 p-2">
+              <div class="col col-lg-1">1.</div>
+              <div class="col col-lg-4">Birthday cake</div>
+              <div class="col col-lg-4">23.06.2020</div>
+              <div class="col col-lg-3">6.500 ֏</div>
+            </div>
+            <div class="row bg-light border mx-3 p-2">
+              <div class="col col-lg-1">2.</div>
+              <div class="col col-lg-4">Corporate cake</div>
+              <div class="col col-lg-4">25.06.2020</div>
+              <div class="col col-lg-3">15.000 ֏</div>
+            </div>
+            <div class="row bg-light border mx-3 p-2">
+              <div class="col col-lg-1">3.</div>
+              <div class="col col-lg-4">Cupcakes</div>
+              <div class="col col-lg-4">01.07.2020</div>
+              <div class="col col-lg-3">4.800 ֏</div>
+            </div>
+          </table>
+  
+          <br>
+          <hr>
+  
+          <h3 class="ml-4 my-3 text-success text-center">Wishlist</h3>
+          <div class="row justify-content-center">
+            <div class="col-6 col-lg-3 col-md-6 col-sm-6 ">
+              <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+                <div class="card" style="width: 180px; height: 280px;">
+                    <img src="images/birthdaycake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body mt-1  bg-light">
+                      <h6 class="card-title text-center" style=" color : #42784c;">Birthday cake</h6>
+                      <h6 class="card-text text-center">6.500 ֏</h6>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="">
+                          <img class="mr-3" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+                          </a>
+                         <a href="">
+                           <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                           </a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3 col-md-6 col-sm-6 ">
+                  <div class="card" style="width: 180px; height: 280px;">
+                      <img src="images/chococake2.webp" class="card-img-top" alt="...">
+                      <div class="card-body bg-light">
+                        <h6 class="card-title text-center " style=" color : #42784c;">Choco cake</h6>
+                        <h6 class="card-text text-center">7.000 ֏</h6>
+                        <div class="d-flex justify-content-center mt-4">
+                          <a href="">
+                            <img class="mr-3" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+                            </a>
+                           <a href="">
+                             <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                             </a>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+          </div>
+          <br>
+  
+          <hr>
+            <h3 class="ml-4 my-3 text-success text-center">Recent activity</h3>
+            <br>
+            <!-- card 1 -->
+            <div class="card mb-3" style="max-width: 1000px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                   <a href="product.html"><img src="images/chococake1.jpg" class="card-img" alt="..."></a>
+                </div>
+                <div class="col-md-8 bg-light">
+                  <div class="card-body row" >
+                    <div class="col">
+                      <a href="product.html" class="text-success"> <h5 class="card-title">Chocolate cake</h5> </a>
+                    <p class="card-text">Chocolate celebration cake ․ A great surprise for your friends or relatives.</p>
+                    </div>
+                    <div class="col">
+                      <h1 style="text-align: center; color : #42784c;">7.000 ֏</h1>
+                      <br>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="">
+                          <img class="mr-3" src="images/like.svg" style="width: 25px; height: 25px;" alt="">
+                          </a>
+                         <a href="">
+                           <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                           </a>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 2 -->
+            <div class="card mb-3" style="max-width: 1000px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                   <a href="product.html"><img src="images/birthdaycake.jpg" class="card-img" alt="..."></a>
+                </div>
+                <div class="col-md-8 bg-light">
+                  <div class="card-body row" >
+                    <div class="col">
+                      <a href="product.html" class="text-success"> <h5 class="card-title">Birthday cake</h5> </a>
+                    <p class="card-text">Birthday pony cake ․ A great surprise for your baby girl.</p>
+                    </div>
+                    <div class="col">
+                      <h1 style="text-align: center; color : #42784c;">6.500 ֏</h1>
+                      <br>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="">
+                          <img class="mr-3" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+                          </a>
+                         <a href="">
+                           <img class="" src="images/buyed.svg" style="width: 25px; height: 25px;" alt="">
+                           </a>
+                      </div>
+                      
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="card mb-3" style="max-width: 1000px;">
+              <div class="row no-gutters">
+                <div class="col-md-4">
+                   <a href="product.html"><img src="images/chococake2.webp" class="card-img" alt="..."></a>
+                </div>
+                <div class="col-md-8 bg-light">
+                  <div class="card-body row" >
+                    <div class="col">
+                      <a href="product.html" class="text-success"> <h5 class="card-title">Chocolate cake</h5> </a>
+                    <p class="card-text">Chocolate celebration cake ․ A great surprise for your friends or relatives.</p>
+                    </div>
+                    <div class="col">
+                      <h1 style="text-align: center; color : #42784c;">7.000 ֏</h1>
+                      <br>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="">
+                          <img class="mr-3" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+                          </a>
+                         <a href="">
+                           <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                           </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- settings modal -->
+<div class="modal fade" id="settingM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+        <h2 class="modal-title text-success" id="exampleModalLabel">Account settings</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-</form>
+        <div class="row">
+          <div class="col col-lg-3 d-lg-block d-md-block d-none">
+        <img class="" src="images/acc.svg" style="width: 150px; height: 150px;" alt="">
+        <h6 class="m-2 text-success">Lusine Atchemyan</h6>
+          </div>
+          <div class="col-12 col-lg-9">
+            <div class=" row bg-light border mx-3 p-2">
+              <div class="col-3 font-weight-bold">Name:</div>
+              <div class="col-8 ">Lusine</div>
+              <div class="col-1 text-success">Edit</div>
+            </div>
+            <div class=" row bg-light border mx-3 p-2">
+              <div class="col-3 font-weight-bold">Surname:</div>
+              <div class="col-8 ">Atchemyan</div>
+              <div class="col-1 text-success">Edit</div>
+            </div>
+            <div class="row bg-light border mx-3 p-2">
+              <div class="col-3 font-weight-bold">Email:</div>
+              <div class="col-8 ">lusine.atsemyan.y@tumo.org</div>
+              <div class="col-1  text-success">Edit</div>
+            </div>
+            <div class="row bg-light border mx-3 p-2">
+              <div class="col-3 font-weight-bold">Password:</div>
+              <div class="col-8 ">***********</div>
+              <div class="col-1 text-success">Edit</div>
+            </div>
+          </div>
       </div>
+      
+      <hr>
+      <h3 class="ml-4 my-3 text-success">Payment Options</h3>
+      <p class="text-muted mx-4" style="font-size: 15px;">Manage saved credit cards. New payment methods may only be added in checkout due to verification requirements.</p>
+      <div class="row border bg-light p-2 mx-1">
+      <div class="form-group col-4">
+        <label for="inputZip" class="">Card number</label>
+        <input type="text" class="form-control" placeholder="XXXX XXXX" id="inputZip">
+      </div>
+      <div class="form-group col-4">
+        <label for="inputZip">Name on card</label>
+        <input type="text" class="form-control" placeholder="Lusine Atchemyan" id="inputZip">
+      </div>
+      <div class="form-group col-4">
+        <label for="inputZip">Expiry Date</label>
+        <input type="text" class="form-control" placeholder="MM/YY" id="inputZip">
+      </div>
+      </div>
+      <hr>
+      
+          <div class="row">
+            <div class="col-9"><h3 class="ml-4 my-2 text-success">Billing and Shipping</h3></div>
+            <div class="col-3 mt-3"><a class="text-center text-success" href="">+ Add new address</a></div>
+         </div>
+      <p class="text-muted mx-4" style="font-size: 15px;">Make changes to your billing and shipping information and save them for future orders.</p>
+       
+        <div class="border p-3 bg-light">
+          <h6>Lusine Atchemyan / Yerevan, Armenia / st. Teryan 84 / ARM123456 </h6>
+          <h6>Lusine Atchemyan / Yerevan, Armenia / st. M. Avetisyan 48 / ARM123456 </h6>
+        </div> 
+        
+      </div>
+      
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-success">Save changes</button>
       </div>
+      </div>
+    </div>
     </div>
   </div>
 </div>
 
-    
-    <div class="modal fade" id="registerM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<!-- favorite modal -->
+<div class="modal fade" id="favoriteM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+        <h2 class="modal-title text-success" id="exampleModalLabel">My Wishlist</h2>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <form>
-  
-    <div class="form-group">
-      <label for="inputName">Name, Surname</label>
-      <input type="text" class="form-control" placeholder="Name Surname">
-    </div>
-    
-    <div class="form-group">
-      <label for="inputAddress">Address</label>
-      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-    </div>
-    <div class="form-group">
-      <label for="inputAddress2">Address 2</label>
-      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-    </div>
-
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  
-
-</form>
+        <div class="row justify-content-center">
+          <div class="col-6 col-lg-3 col-md-6 col-sm-6 ">
+            <div class="col-6 col-lg-3 col-md-6 col-sm-6">
+              <div class="card" style="width: 180px; height: 280px;">
+                  <img src="images/birthdaycake.jpg" class="card-img-top" alt="...">
+                  <div class="card-body mt-1  bg-light">
+                    <h6 class="card-title text-center" style=" color : #42784c;">Birthday cake</h6>
+                    <h6 class="card-text text-center">6.500 ֏</h6>
+                    <div class="d-flex justify-content-center mt-4">
+                      <a href="">
+                        <img class="mr-3" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+                        </a>
+                       <a href="">
+                         <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                         </a>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="col-6 col-lg-3 col-md-6 col-sm-6 ">
+                <div class="card" style="width: 180px; height: 280px;">
+                    <img src="images/chococake2.webp" class="card-img-top" alt="...">
+                    <div class="card-body bg-light">
+                      <h6 class="card-title text-center " style=" color : #42784c;">Choco cake</h6>
+                      <h6 class="card-text text-center">7.000 ֏</h6>
+                      <div class="d-flex justify-content-center mt-4">
+                        <a href="">
+                          <img class="mr-3" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
+                          </a>
+                         <a href="">
+                           <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+                           </a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </div>
 </div>
+  
 
 
 <!-- / footer --> 
