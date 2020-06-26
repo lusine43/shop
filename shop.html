@@ -40,10 +40,10 @@
         <img class="" src="images/liked.svg" style="width: 25px; height: 25px;" alt="">
         <span class="badge badge-light text-center text-success mr-5">2</span>
         </a>
-       <a href="cart.html">
-         <img class="cart.html" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
-         <span class="badge badge-light text-center text-success">3</span>
-         </a>
+        <a href=""  data-toggle="modal" data-target="#cartM">
+          <img class="" src="images/shop.svg" style="width: 25px; height: 25px;" alt="">
+          <span class="badge badge-light text-center text-success">3</span>
+          </a>
   </div>
 </div>
 
@@ -281,12 +281,7 @@
                     Not dietic
                   </label>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                  <label class="form-check-label" for="exampleRadios3">
-                    Disabled radio
-                  </label>
-                </div>
+                
               </div>
             </div>
           </div>
@@ -927,7 +922,101 @@
     </div>
   </div>
 </div>
-  
+
+  <!-- Cart Modal -->
+<div class="modal fade" id="cartM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title text-success" id="exampleModalLabel">My Cart</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="col">
+          <!-- card 1 -->
+          <div class="card my-3 justify-content-center ">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="images/birthdaycake.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="background-color: #aaf55f;">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Birthday cake</h6>
+                  <p class="card-text text-center">(20 piece)</p>
+                  <h5 style="text-align: center;"><strong>6.500 ֏</strong></h5>
+                  
+                  <div class="d-flex justify-content-center">
+                    <a href="">
+                      <img class="mr-3" src="images/like.svg" style="width: 20px; height: 20px;" alt="">
+                      </a>
+                     <a href="">
+                       <img class="" src="images/buyed.svg" style="width: 20px; height: 20px;" alt="">
+                       </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card my-3 justify-content-center" >
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="images/cupcake1.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="background-color: #aaf55f;">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Cupcakes</h6>
+                  <p class="card-text text-center">(8 piece)</p>
+                  <h5 style="text-align: center;"><strong>4.800 ֏</strong></h5>
+                  
+                  <div class="d-flex justify-content-center">
+                    <a href="">
+                      <img class="mr-3" src="images/like.svg" style="width: 20px; height: 20px;" alt="">
+                      </a>
+                     <a href="">
+                       <img class="" src="images/buyed.svg" style="width: 20px; height: 20px;" alt="">
+                       </a>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card d-flex my-3 justify-content-center">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="images/bespoke.jpg" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8" style="background-color: #aaf55f;">
+                <div class="card-body">
+                  <h6 class="card-title text-center">Corporate cake</h6>
+                  <p class="card-text text-center">(20 piece)</p>
+                  <h5 class="text-center"><strong>15.000 ֏</strong></h5>
+                  <div class="d-flex justify-content-center">
+                    <a href="">
+                      <img class="mr-3" src="images/like.svg" style="width: 20px; height: 20px;" alt="">
+                      </a>
+                     <a href="">
+                       <img class="" src="images/buyed.svg" style="width: 20px; height: 20px;" alt="">
+                       </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a href="payment.html"><button type="button" class="btn btn-success">Checkout</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <!-- / footer --> 
